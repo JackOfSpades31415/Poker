@@ -1,0 +1,31 @@
+package us.mattgreen.poker;
+
+public class Card {
+
+    private Face face;
+    private Suit suit;
+    private int value;
+
+    public Card(Face face, Suit suit, int value) {
+        this.face = face;
+        this.suit = suit;
+        this.value = value;
+    }
+
+    public Face getFace() {
+        return face;
+    }
+
+    public Suit getSuit() {
+        return suit;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s - %s - %s \n", face, suit, value);
+    }
+}
